@@ -14,16 +14,17 @@ open ~/Documents/VSC\ Python/Mariachi/Mariachi.xcodeproj
 
 ### Adding the sound file to the Xcode target
 
-The `jarabe_tapatio.mp3` file is already in `Mariachi/Resources/`, but Xcode needs to know about it:
+The `jarabe_tapatio.mp3` file is already in `Mariachi/Resources/`. The project uses auto-sync, so Xcode should detect it automatically.
 
-1. Open the project in Xcode
-2. In the **Project Navigator** (left sidebar), right-click the `Mariachi` folder
-3. Select **Add Files to "Mariachi"...**
-4. Navigate to `Mariachi/Resources/jarabe_tapatio.mp3`
-5. Make sure **"Add to targets: Mariachi"** is checked
-6. Click **Add**
+**Important**: In Xcode's sidebar you'll see two "Mariachi" entries — the first one (blueprint icon) is the **project**, the second one (folder icon) is the **source folder**. Your code and resources live in the **source folder** (the second one).
 
-Now the sound file will be bundled into the app when you build it.
+If the sound doesn't play when you tap the button, you may need to add it manually:
+
+1. In the **Project Navigator** (left sidebar), right-click the **second** `Mariachi` folder (the one with the blue folder icon, not the blueprint icon)
+2. Select **Add Files to "Mariachi"...**
+3. Navigate to `Mariachi/Resources/jarabe_tapatio.mp3`
+4. Make sure **"Add to targets: Mariachi"** is checked
+5. Click **Add**
 
 ---
 
